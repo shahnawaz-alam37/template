@@ -25,6 +25,10 @@ const studentmodel = require('/models/student');
 //   console.log('Connected to MySQL database!');
 // });
 
+//server static files from the pubilc directory
+app.use(express.static('public'));
+
+
 // Configure EJS as the view engine
 app.set('view engine', 'ejs');
 
