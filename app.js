@@ -1,9 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-// const mysql = require('mysql');
 const app = express();
 
-// // Configure MySQL connection
+// const mysql = require('mysql'); use this if your are using a mysql database
+// const mongoose = require('mongoose'); use this if your are using a mongoose database
+
+const studentmodel = require('/models/student');
+// importing the model of the student from models directory
+
+
+// //Configure MySQL connection
 // const db = mysql.createConnection({
 //   host: 'localhost',
 //   user: 'root',
@@ -35,7 +41,7 @@ app.get('/next',(req, res) => {
     res.render('next', { title: 'next page', uname:'new page' });
 });
 
-// Start the server
+// Start the server on localhost at port 3000
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
