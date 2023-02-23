@@ -1,1 +1,4 @@
 /* style sheet for your html/ejs files */
+#body{
+    background-color:darkcyan;
+}
