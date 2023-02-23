@@ -5,7 +5,7 @@ const app = express();
 // const mysql = require('mysql'); use this if your are using a mysql database
 // const mongoose = require('mongoose'); use this if your are using a mongoose database
 
-const studentmodel = require('/models/student');
+// const studentmodel = require('/models/student');
 // importing the model of the student from models directory
 
 

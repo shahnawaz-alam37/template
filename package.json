@@ -1,13 +1,14 @@
 {
   "name": "student-db-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "simple template for andy application",
+  "main": "app.js",
   "scripts": {
+    "start": "node app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Shahnawaz alam",
   "license": "ISC",
   "dependencies": {
     "body-parse": "^0.1.0",
