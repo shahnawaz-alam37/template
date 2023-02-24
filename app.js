@@ -26,8 +26,7 @@ const app = express();
 // });
 
 //server static files from the pubilc directory
-app.use(express.static('public'));
-
+app.use(express.static(__dirname + '/public'));
 
 // Configure EJS as the view engine
 app.set('view engine', 'ejs');
